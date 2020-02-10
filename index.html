@@ -6,9 +6,11 @@
   <title>Nicholas Kjerland Profile</title>
   <link rel="stylesheet" href="css/main.css">
 
+
 </head>
 
-<body>
+<body onload = "initializeMenu()">
+
 
   <header>
     <h2>Nicholas Kjerland</h2>
@@ -32,15 +34,59 @@
       </div>
     </div>
     <div class="Links">
-      <img src="Images/LinkedIn.png" alt="LinkedIn" align="right">
-      <img src="Images/Gmail.png" alt="Gmail" align="right">
-      <img src="Images/GitHub.png" alt="GitHub" align="right">
-      <button class="ButtonResume" onclick="#" style="font-size:1.5vw;">View My Resume</button>
+      <a href="https://www.linkedin.com/in/nicholas-kjerland-6533421a2/"><img src="Images/LinkedIn.png" align="right"></a>
+      <a href="mailto: nkjerland@gmail.com"><img src="Images/Gmail.png" align="right"></a>
+      <a href="#"><img src="Images/GitHub.png" align="right"></a>
+      <a href="https://drive.google.com/file/d/1pi0cKMRDPqdS4DjxiNfzsGWYjtncr0Xd/view?usp=sharing"><button type="button" class="ButtonResume" style="font-size:1.5vw;">View My Resume</button></a>
     </div>
   </div>
-<center style="font-size:3vw;font-weight:600;">*SITE IS A WORK IN PROGRESS*<br>*NEW FEATURES COMING SOON*</center>
+  <div class="markers">
+    <div class="marker" id="marker.About">  </div>
+    <div class="marker" id="marker.Employment">  </div>
+    <div class="marker" id="marker.Education">  </div>
+    <div class="marker" id="marker.Skills">  </div>
+    <div class="marker" id="marker.Languages">  </div>
+    <div class="marker" id="marker.My Story">  </div>
+  </div>
+  <div class="tabs">
+    <button id = "t1"class=" tablinks" onclick="openMenu(event, 'About')">About</button>
+    <button class="tablinks" onclick="openMenu(event, 'Employment')">Employment</button>
+    <button class="tablinks" onclick="openMenu(event, 'Education')">Education</button>
+    <button class="tablinks" onclick="openMenu(event, 'Skills')">Skills</button>
+    <button class="tablinks" onclick="openMenu(event, 'Languages')">Languages</button>
+    <button class="tablinks" onclick="openMenu(event, 'My Story')">My Story</button>
+  </div>
 
+  <div class="tabcontent" id="About">
+    <h3>About me</h3>
+    <p>I like stuff</p>
+  </div>
+
+  <div class="tabcontent" id="Employment">
+    <h3>Employment</h3>
+    <p>I have had at least 1 job</p>
+  </div>
+
+  <div class="tabcontent" id="Education">
+    <h3>Education</h3>
+    <p>skoolz</p>
+  </div>
+
+  <div class="tabcontent" id="Skills">
+    <h3>Skills</h3>
+    <p>yes</p>
+  </div>
+
+  <div class="tabcontent" id="Languages">
+    <h3>Languages</h3>
+    <p>Barely even english</p>
+  </div>
+
+  <div class="tabcontent" id="My Story">
+    <h3>My Story</h3>
+    <p>Birth->Early life->Depression->Internet obsession->Rise & fall->Betrayal->Alcoholism</p>
+  </div>
 
 </body>
-
+  <script src="JavaScript/VerticalMenu.js"></script>
 </html>
