@@ -19,7 +19,9 @@ div {
   padding: 0;
 }
 
-img {vertical-align: text-bottom;}
+img {
+  vertical-align: text-bottom;
+}
 
 header {
   font-family: Cinzel;
@@ -71,8 +73,7 @@ header h2 {
   position: relative;
   width: 50%;
   margin: 0 25% -26.03% 25%;
-  transform: translate(0,-100%);
-
+  transform: translate(0, -100%);
 }
 
 .Profile img {
@@ -89,13 +90,30 @@ header h2 {
 .Links {
   display: inline-block;
   position: relative;
-  background: rgb(159, 159, 159);
-  width:50%;
+  background: rgb(196, 196, 196);
+  width: 50%;
   height: 4vw;
   margin-left: 25%;
 }
 
-.Links img {
+.Links input {
+  position: relative;
+  margin: 1%;
+  margin-right: 2%;
+  height: 80%;
+}
+
+.icon {
+  position: relative;
+  width: 10%;
+  height: 80%;
+}
+
+.icon-linkedin {
+  background-image: url(../Images/LinkedIn.png);
+}
+
+.Links a img {
   position: relative;
   margin: 1%;
   margin-right: 2%;
@@ -108,6 +126,7 @@ header h2 {
   border-color: black;
   height: 80%;
   margin: 1%;
+  cursor: pointer;
 }
 
 .ButtonResume:hover {
@@ -115,4 +134,77 @@ header h2 {
   color: rgb(25, 101, 0);
   background: rgba(204, 221, 202, 0.86);
   transition: 0.5s;
+}
+
+.ButtonLinkImage {
+  height: 80%;
+  margin: 1%;
+  width: auto;
+}
+
+.markers {
+  float: left;
+  margin: 81px 0 0 81px;
+  width: 5px;
+}
+
+.marker {
+  width: 4px;
+  height: 64px;
+  background: gray;
+}
+
+.markers div.active {
+  background-color: rgb(62, 149, 76);
+  width: 5px;
+}
+
+.tabs {
+  float: left;
+  margin: 81px 0 0 0;
+  padding: 0;
+}
+
+.tabs button {
+  display: block;
+  background-color: inherit;
+  color: rgb(182, 182, 182);
+  padding: 18px 30px;
+  font-size: 24px;
+  margin: 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.tabs button:hover {
+  background-color: rgb(213, 255, 213);
+  color: rgb(23, 162, 45);
+  transition: 0.5s;
+}
+
+.tabs button.active {
+  color: rgb(23, 162, 45);
+}
+
+.tabcontent {
+  display: none;
+  float: left;
+  margin: 81px 0;
+  padding: 0 40px;
+  width: 750px;
+  height: 384px;
+  font-size: 30px;
+}
+
+.tabcontent h3 {
+  margin: 10px 20px;
+  color: black;
+}
+
+.tabcontent p {
+  color: rgb(119, 117, 117);
+  font-size: 25px;
 }
