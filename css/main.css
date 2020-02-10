@@ -142,41 +142,53 @@ header h2 {
   width: auto;
 }
 
+.tabMenu {
+  margin: 7vw 0 0 8vw;
+  width: 80%;
+  height: 28.2vw;
+}
+
 .markers {
+  position: relative;
   float: left;
-  margin: 81px 0 0 81px;
   width: 5px;
+  height: 283vw;
 }
 
 .marker {
+  position: relative;
   width: 4px;
-  height: 64px;
+  height: 1.666%;
   background: gray;
 }
 
 .markers div.active {
+  position: relative;
   background-color: rgb(62, 149, 76);
   width: 5px;
 }
 
 .tabs {
+  position: relative;
   float: left;
-  margin: 81px 0 0 0;
   padding: 0;
+  height: 100%;
 }
 
 .tabs button {
+  position: relative;
   display: block;
-  background-color: inherit;
   color: rgb(182, 182, 182);
-  padding: 18px 30px;
-  font-size: 24px;
+  padding: 1vw 1.5vw;
+  font-size: 2.3vw;
   margin: 0;
   width: 100%;
   border: none;
+  height: 16.667%;
   outline: none;
   text-align: left;
   cursor: pointer;
+  background: white;
 }
 
 .tabs button:hover {
@@ -190,21 +202,21 @@ header h2 {
 }
 
 .tabcontent {
+  position: relative;
   display: none;
   float: left;
-  margin: 81px 0;
-  padding: 0 40px;
-  width: 750px;
-  height: 384px;
-  font-size: 30px;
+  padding: 0 2vw;
+  width: 30vw;
+  height: 28.2vw;
+  font-size: 1.75vw;
 }
 
 .tabcontent h3 {
-  margin: 10px 20px;
+  margin: .5vw 1vw;
   color: black;
 }
 
 .tabcontent p {
   color: rgb(119, 117, 117);
-  font-size: 25px;
+  font-size: 1vw;
 }
