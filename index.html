@@ -4,26 +4,23 @@
     <meta charset="utf-8">
     <title>Nicholas Kjerland</title>
 
-    <link rel="stylesheet" href="/CSS/master.css">
+    <link rel="stylesheet" href="css/master.css">
+    <script src="Javascript/tools.js">
+
+    </script>
 
   </head>
 
   <body>
     <div class="navbar">
-      <a class="home_image" href="#"><img src="Images/menu.png" alt=""></a>
-      <h2>Nicholas Kjerland</h2>
-      <ul>
-        <li>
-          <a href="index.html" class="navbar_link">Home</a>
-        </li>
-        <li>
-          <a href="Pages/gallery.html" class="navbar_link">Gallery</a>
-        </li>
+      <script type="text/javascript">
+          document.getElementById('navbar').innerHTML = LoadPage('HTML/navbar.html')
+      </script>
       </ul>
     </div>
 
     <div class="ProfileBody">
-      <img src="Images/ProfileBackground3.jpg">
+      <img src="Images/ProfileBackground2.jpg">
       <p class"ProfileText">
         Software developer <br> and amateur photographer
       </p>
