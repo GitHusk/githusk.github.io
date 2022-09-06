@@ -5,16 +5,21 @@
   <meta charset="utf-8">
   <title>Nicholas Kjerland</title>
 
-  <link rel="stylesheet" href="../CSS/master.css">
-  <link rel="stylesheet" href="../CSS/gallery.css">
+  <link rel="stylesheet" href="../css/master.css">
+  <link rel="stylesheet" href="../css/gallery.css">
+
+  <script type="text/javascript" src="../Javascript/gallery.js">
+
+  </script>
 
 </head>
 
-  <body>
+  <body onload="Resize()" onresize="Resize()">
 
-    <div class="navbar">
-      <a class="home_image" href="#"><img src="/Images/menu.png" alt=""></a>
+    <div class="navbar" >
+      <a class="home_image" href="../index.html"><img src="../Images/menu.png" alt=""></a>
       <h2>Nicholas Kjerland</h2>
+      <a class="home_image" href="https://www.instagram.com/nicholaskjerland/"> <img src="../Images/Instagram.png" alt=""> </a>
       <ul>
         <li>
           <a href="../index.html" class="navbar_link">Home</a>
@@ -25,11 +30,57 @@
       </ul>
     </div>
 
-    <div class="inprogress">
-      WORK IN PROGRESS BUT CHECK THIS OUT
-    </div>
+    <div class="galleryFrame">
 
-    <img src="/Images/Sunrise.jpg" alt="">
+
+      <div class="galleryColumn">
+
+        <div class="galleryImage">
+          <img src="../Images/Gallery/1.jpg">
+        </div>
+
+        <div class="galleryImage">
+          <img src="../Images/Gallery/4.jpg">
+        </div>
+
+        <div class="galleryImage">
+          <img src="../Images/Gallery/7.jpg">
+        </div>
+
+      </div>
+
+      <div class="galleryColumn">
+
+        <div class="galleryImage">
+          <img src="../Images/Gallery/2.jpg">
+        </div>
+
+        <div class="galleryImage">
+          <img src="../Images/Gallery/5.jpg">
+        </div>
+
+        <div class="galleryImage">
+          <img src="../Images/Gallery/8.jpg">
+        </div>
+
+      </div>
+
+      <div class="galleryColumn">
+
+        <div class="galleryImage">
+          <img src="../Images/Gallery/3.jpg">
+        </div>
+
+        <div class="galleryImage">
+          <img src="../Images/Gallery/6.jpg">
+        </div>
+
+        <div class="galleryImage">
+        </div>
+
+      </div>
+
+    </div>
 
   </body>
 </html>
