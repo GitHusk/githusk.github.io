@@ -1,0 +1,67 @@
+.navbar {
+  position: relative;
+  height: 40px;
+  padding: 5px;
+  align-items: center;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+/* Header name */
+.navbar h2 {
+  display: inline-block;
+  height: inherit;
+  vertical-align: top;
+  margin: 0 5px 0 15px;
+}
+
+/* Instagram image */
+.instagram_image img{
+  padding-left: 10px;
+  height: 40px;
+  text-decoration: none;
+}
+
+/* sidebar button container */
+.navbar_reveal{
+  display: none;
+  float: right;
+}
+
+/* Sidebar button */
+.navbar_reveal img{
+  width: 40px;
+  height: inherit;
+}
+
+/* List container */
+.navbar ul {
+  display: inline-block;
+  height: inherit;
+  margin: 9px 5px 0 15px;
+  float: right;
+}
+
+/* List elements */
+.navbar ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+  vertical-align: middle;
+}
+
+/* List element link */
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+@media only screen and (max-width: 700px){
+  .navbar_reveal {
+    display: inline-block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}

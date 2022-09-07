@@ -5,23 +5,20 @@
     <title>Nicholas Kjerland</title>
 
     <link rel="stylesheet" href="css/master.css">
-    <script src="Javascript/tools.js">
-
-    </script>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <script type="text/javascript" src="../Javascript/navbar.js"></script>
 
   </head>
 
   <body>
-    <div class="navbar">
-      <script src="Javascript/navbar.js"></script>
-      </ul>
+    <div class="navbar" id="navbar" onload="NavbarResize()" onresize="NavbarResize()">
+      <script>LoadNavbar()</script>
     </div>
 
     <div class="ProfileBody">
-      <img src="Images/ProfileBackground2.jpg">
-      <p class"ProfileText">
-        Software developer <br> and amateur photographer
-      </p>
+      <div class="about-me">
+
+      </div>
     </div>
 
   </body>

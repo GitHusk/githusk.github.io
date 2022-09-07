@@ -1,4 +1,4 @@
-function Resize() {
+function GalleryResize() {
   var frame = document.getElementsByTagName('galleryFrame');
   var collums = document.getElementsByClassName('galleryColumn');
   var imageContainer = document.getElementsByClassName('galleryImage');

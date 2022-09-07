@@ -1,5 +1,5 @@
 function LoadNavbar() {
-  var navbar = document.getElementById("navbar");
-  var navbarhtml = fetch("navbar.html");
-  navbar.innerHTML = navbarHTML;
+  fetch("../HTML/navbar.html")
+  .then(res => res.text())
+  .then(text => document.getElementById("navbar").innerHTML = text);
 }
