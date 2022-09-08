@@ -1,33 +1,76 @@
+:root {
+  --background-height: 918px;
+  --about-me-width: 690px;
+  --about-me-height: 460px;
+  --about-me-padding: 10px;
+}
+
 body {
+  font-family: 'Libre Baskerville', serif;
   margin: 0;
 }
 
 .ProfileBody {
-  background-image: url('../Images/ProfileBackground.jpg');
-  background-position: top;
-  background-size: contain;
+  background-image: url('../Images/DSCF2985.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
+  position: fixed;
+  vertical-align: top;
+  width: 100%;
+  height: var(--background-height);
+}
+
+.about-me-container {
+  width: var(--about-me-width);
+  height: var(--about-me-height);
+  margin: 0 calc((100% - var(--about-me-width)) / 2);
+  margin-top: calc((var(--background-height) - var(--about-me-height)) / 2);
+  background-color: white;
+  display: flex;
+}
+
+.about-me{
+  padding: 10px;
+  width: calc(var(--about-me-width) / 2 - var(--about-me-padding) * 2);
+}
+
+.about-me h2 {
   text-align: center;
-  max-width: 100vw;
-  height: calc(100vw / 1.8);
 }
 
-.ProfileBody img {
-  width: 100%;
+.about-me p {
+  font-size: 20px;
 }
 
-.ProfileBody p {
-  color: white;
-  font-size: 4vw;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.portrait-picture {
+  height: inherit;
 }
 
-@media only screen and (max-width:640px) {
-  .navbar ul{
-    display: none;
+.portrait-picture img {
+  height: inherit;
+}
+
+@media only screen and (max-width: 690px) {
+  .about-me-container {
+    width: 100%;
+    height: calc(100vw / 6 * 4);
+    margin: 0;
+    margin-top: max(calc((100vw - var(--about-me-height)) / 2), 30px);
+  }
+
+  .about-me h2 {
+    font-size: 5vw;
+  }
+
+  .about-me p {
+    font-size: 2.7vw;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .about-me p {
+    font-size: 2.35vw;
   }
 }
