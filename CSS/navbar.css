@@ -2,7 +2,7 @@
   font-family: 'Libre Baskerville', serif;
   margin: 0;
   height: 40px;
-  padding: 10px;
+  padding: 10px 10px 15px 10px;
   display: flex;
   border-bottom-style: solid;
   border-bottom-width: 2px;
@@ -31,6 +31,7 @@
 
 /* Sidebar button */
 .navbar_reveal img{
+  margin: 3px 0 0 15px;
   height: 40px;
 }
 
@@ -57,9 +58,13 @@
   color: #333;
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 800px){
   .navbar_reveal {
     display: inline-block;
+  }
+
+  .instagram_image {
+    display: none;
   }
 
   .navbar ul {
