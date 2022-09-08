@@ -57,7 +57,7 @@ body {
     width: 100%;
     height: calc(100vw / 6 * 4);
     margin: 0;
-    margin-top: max(calc((100vw - var(--about-me-height)) / 2), 30px);
+    margin-top: max(calc((100vh - var(--about-me-height) - 35px) / 2), 30px);
   }
 
   .about-me h2 {
